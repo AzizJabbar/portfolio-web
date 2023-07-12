@@ -1,0 +1,19 @@
+[
+  { "name": "Python", "icon": "logos:python", "color": "" },
+  { "name": "Java", "icon": "logos:java", "color": "" },
+  { "name": "Kotlin", "icon": "logos:kotlin-icon", "color": "" },
+  { "name": "HTML5", "icon": "logos:html-5", "color": "" },
+  { "name": "CSS3", "icon": "logos:css-3", "color": "" },
+  { "name": "Javascript", "icon": "logos:javascript", "color": "" },
+  { "name": "MySQL", "icon": "logos:mysql", "color": "" },
+  { "name": "PostgreSQL", "icon": "logos:postgresql", "color": "" },
+  { "name": "Bootstrap", "icon": "logos:bootstrap", "color": "" },
+  { "name": "ReactJS", "icon": "logos:react", "color": "" },
+  { "name": "NextJS", "icon": "logos:nextjs-icon", "color": "" },
+  { "name": "Spring Boot", "icon": "simple-icons:springboot", "color": "#6db33f" },
+  { "name": "Django", "icon": "logos:django-icon", "color": "" },
+  { "name": "Figma", "icon": "logos:figma", "color": "" },
+  { "name": "Github", "icon": "logos:github-icon", "color": "" },
+  { "name": "Gitlab", "icon": "logos:gitlab", "color": "" },
+  { "name": "Postman", "icon": "logos:postman-icon", "color": "" }
+]

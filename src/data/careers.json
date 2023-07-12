@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Teaching Assistant Coordinator of Data Structure & Algorithms",
+    "desc": [
+      "Managing the teaching assistant team and mentoring students of Data Structure and Algorithms at the Faculty of Computer Science, University of Indonesia.",
+      "Making DSA problems and solutions for students and scoring them.",
+      "Organized lab exercise sessions and programming assignments"
+    ],
+    "company": "FASILKOM UI (2023)",
+    "logo": "/img/fasilkom.png"
+  },
+  {
+    "id": 2,
+    "title": "Teaching Assistant of Enterprise Application Architecture and Programming",
+    "desc": [
+      "Managed and mentoring students of Enterprise Application Architecture and Programming at the Faculty of Computer Science, University of Indonesia.",
+      "Attended lab sessions to help students work on exercises",
+      "Assess student work including lab exercises and programming assignments"
+    ],
+    "company": "FASILKOM UI (2022)",
+    "logo": "/img/fasilkom.png"
+  },
+  {
+    "id": 3,
+    "title": "Teaching Assistant of Data Structure & Algorithms",
+    "desc": [
+      "Managed and mentoring students of Enterprise Data Structure and Algortihms at the Faculty of Computer Science, University of Indonesia.",
+      "Assess student work including lab exercises and programming assignments",
+      "Making DSA problems and solutions for students and scoring them."
+    ],
+    "company": "FASILKOM UI (2022)",
+    "logo": "/img/fasilkom.png"
+  }
+]
