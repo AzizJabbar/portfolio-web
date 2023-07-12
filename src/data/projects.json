@@ -20,16 +20,16 @@
   {
     "id": 3,
     "title": "Lagu App: Website to Find Songs and Artists",
-    "desc": "A simple website built with ReactJS to find songs and artists using Last.FM API. This website was created as a personal exercise in learning React",
+    "desc": "A simple website built with ReactJS to find songs and artists using Last.FM API. This website was created as a personal exercise in learning React.js",
     "img": "/img/laguapp.png",
     "repo": "https://github.com/AzizJabbar/lagu-app",
     "deploy": "https://lagu-app-aziz.netlify.app",
-    "stacks": ["ReactJS"]
+    "stacks": ["React.js"]
   },
   {
     "id": 4,
     "title": "To-Do App: Simple To-Do App Built with Kotlin",
-    "desc": "Description for To-Do App",
+    "desc": "A simple to-do android app built with Kotlin, with reminder feature. This app is part of Bangkit module submission.",
     "img": "/img/todoapp3.png",
     "repo": "https://github.com/AzizJabbar/to-do-list-app",
     "deploy": "",
@@ -38,10 +38,10 @@
   {
     "id": 5,
     "title": "Simple CRUD Website Built with NextJS",
-    "desc": "Description for CRUD",
+    "desc": "A simple website built with Next.js with CRUD feature to gorest.co.in API. This website was created as a personal exercise in learning Next.js",
     "img": "/img/blogapp.png",
     "repo": "https://github.com/AzizJabbar/my-blog",
     "deploy": "https://my-blog-aziz.vercel.app/",
-    "stacks": ["NextJS"]
+    "stacks": ["Next.js"]
   }
 ]
