@@ -137,7 +137,8 @@ export default function Home() {
               Hi, my name is <span className="text-indigo-600 font-medium">Aziz Jabbar Shiddiq</span>,
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">I'm a</h1>
-            <TypeWriterEffect
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Web Developer</h1>
+            {/* <TypeWriterEffect
               textStyle={{
                 fontWeight: 700,
                 fontSize: "3.75rem",
@@ -150,7 +151,7 @@ export default function Home() {
               multiTextDelay={1000}
               multiTextLoop={true}
               typeSpeed={30}
-            />
+            /> */}
             <p className="mt-6 text-lg leading-8 text-gray-600">
               I am a fresh graduate of the University of Indonesia, majoring in Information Systems. Having interest in
               front end development and android development.
