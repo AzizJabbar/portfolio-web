@@ -13,7 +13,7 @@ import projects from "../data/projects.json";
 import careers from "../data/careers.json";
 import skills from "../data/skills.json";
 import VideoBackground from "@/components/VideoBackground";
-import TypeWriterEffect from "react-typewriter-effect";
+// import TypeWriterEffect from "react-typewriter-effect";
 
 const navigation = [
   { name: "About", href: "#about-me" },
