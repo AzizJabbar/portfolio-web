@@ -13,6 +13,7 @@ import projects from "../data/projects.json";
 import careers from "../data/careers.json";
 import skills from "../data/skills.json";
 import VideoBackground from "@/components/VideoBackground";
+import TypeWriterEffect from "react-typewriter-effect";
 
 const navigation = [
   { name: "About", href: "#about-me" },
@@ -45,6 +46,7 @@ export default function Home() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">AJS</span>
+              <b>AJS</b>
               {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
             </a>
           </div>
@@ -135,7 +137,20 @@ export default function Home() {
               Hi, my name is <span className="text-indigo-600 font-medium">Aziz Jabbar Shiddiq</span>,
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">I'm a</h1>
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Web Developer</h1>
+            <TypeWriterEffect
+              textStyle={{
+                fontWeight: 700,
+                fontSize: "3.75rem",
+                lineHeight: "1",
+                letterSpacing: "-0.025em",
+              }}
+              startDelay={2000}
+              cursorColor="#3F3D56"
+              multiText={["Web Developer", "Fast Learner", "Fresh Graduate", "Legend"]}
+              multiTextDelay={1000}
+              multiTextLoop={true}
+              typeSpeed={30}
+            />
             <p className="mt-6 text-lg leading-8 text-gray-600">
               I am a fresh graduate of the University of Indonesia, majoring in Information Systems. Having interest in
               front end development and android development.
