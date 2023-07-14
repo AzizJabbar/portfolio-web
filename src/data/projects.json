@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "title": "Simple CRUD Website Built with NextJS",
+    "title": "Simple CRUD Website Built with Next.js",
     "desc": "A simple website built with Next.js with CRUD feature to gorest.co.in API. This website was created as a personal exercise in learning Next.js",
     "img": "/img/blogapp.png",
     "repo": "https://github.com/AzizJabbar/my-blog",
