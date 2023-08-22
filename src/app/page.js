@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, DeviceTabletIcon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -14,6 +15,7 @@ import projects from "../data/projects.json";
 import careers from "../data/careers.json";
 import skills from "../data/skills.json";
 import VideoBackground from "@/components/VideoBackground";
+import { useRouter } from "next/navigation";
 // import TypeWriterEffect from "react-typewriter-effect";
 
 const navigation = [
@@ -33,6 +35,7 @@ export default function Home() {
 
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
@@ -211,12 +214,20 @@ export default function Home() {
             About Me
           </h1>
           <Fade right>
-            <p className="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
+            <p className="my-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
               I am a fresh graduate of the University of Indonesia, majoring in Information Systems with interest in
               front end development and android development. I am a fast learner and want to learn as much as I can
               about exciting new things.
             </p>
           </Fade>
+
+          <Link
+            className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            href="/about"
+            scroll={false}
+          >
+            MORE ABOUT ME
+          </Link>
         </div>
 
         <div className="mx-8 md:mx-16 lg:mx-24 py-16 sm:py-32 lg:py-24">
