@@ -241,7 +241,9 @@ export default function Home() {
           </div>
           <div className="justify-center justify-items-start flex flex-wrap">
             {skills.map((item) => (
-              <Skill name={item.name} icon={item.icon} color={item.color} />
+              <FadeInOnScroll direction="up">
+                <Skill name={item.name} icon={item.icon} color={item.color} />
+              </FadeInOnScroll>
             ))}
           </div>
         </div>
