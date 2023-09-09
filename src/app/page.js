@@ -10,11 +10,11 @@ import Work from "../components/Work";
 import Modal from "../components/Modal";
 import WorkDetail from "../components/WorkDetail";
 import { Icon } from "@iconify/react";
-import Fade from "react-reveal/Fade";
 import projects from "../data/projects.json";
 import careers from "../data/careers.json";
 import skills from "../data/skills.json";
 import VideoBackground from "@/components/VideoBackground";
+import FadeInOnScroll from "@/components/FadeInOnScroll";
 import { useRouter } from "next/navigation";
 // import TypeWriterEffect from "react-typewriter-effect";
 
@@ -213,13 +213,13 @@ export default function Home() {
           <h1 id="about-me" className="text-4xl font-bold text-slate-900 dark:text-slate-100">
             About Me
           </h1>
-          <Fade right>
+          <FadeInOnScroll direction="left">
             <p className="my-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
               I am a fresh graduate of the University of Indonesia, majoring in Information Systems with interest in
               front end development and android development. I am a fast learner and want to learn as much as I can
               about exciting new things.
             </p>
-          </Fade>
+          </FadeInOnScroll>
 
           <Link
             className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
@@ -257,9 +257,9 @@ export default function Home() {
 
             <div className="justify-center justify-items-start flex flex-wrap mt-6">
               {projects.map((item, index) => (
-                <Fade top delay={index * 100}>
+                <FadeInOnScroll delay={index / 10}>
                   <Project onClick={() => handleProjectClick(item.id)} pic={item.img} title={item.title}></Project>
-                </Fade>
+                </FadeInOnScroll>
               ))}
             </div>
             <Modal
@@ -310,7 +310,7 @@ export default function Home() {
               You've come all the way here, why don't you take some time to have a chat with me?
             </p>
             <div className="justify-center justify-items-start flex flex-wrap gap-24 mt-16">
-              <Fade top>
+              <FadeInOnScroll>
                 <Icon
                   icon={"logos:whatsapp-icon"}
                   width="80"
@@ -318,8 +318,8 @@ export default function Home() {
                   className="inline transition duration-150 ease-out hover:ease-in hover:scale-110 hover:cursor-pointer"
                   onClick={() => window.open("https://wa.me/085888549929", "_blank")}
                 />
-              </Fade>
-              <Fade top>
+              </FadeInOnScroll>
+              <FadeInOnScroll>
                 <div onClick={() => window.open("https://line.me/ti/p/~aziz_js", "_blank")}>
                   <img
                     src="/img/LINE_Brand_icon.png"
@@ -328,8 +328,8 @@ export default function Home() {
                     className="inline transition duration-150 ease-out hover:ease-in hover:scale-110 hover:cursor-pointer"
                   />
                 </div>
-              </Fade>
-              <Fade top>
+              </FadeInOnScroll>
+              <FadeInOnScroll>
                 <Icon
                   icon={"logos:linkedin-icon"}
                   width="80"
@@ -337,8 +337,8 @@ export default function Home() {
                   className="inline transition duration-150 ease-out hover:ease-in hover:scale-110 hover:cursor-pointer"
                   onClick={() => window.open("https://www.linkedin.com/in/aziz-jabbar-shiddiq-178360194/", "_blank")}
                 />
-              </Fade>
-              <Fade top>
+              </FadeInOnScroll>
+              <FadeInOnScroll>
                 <Icon
                   icon={"skill-icons:instagram"}
                   width="80"
@@ -346,8 +346,8 @@ export default function Home() {
                   className="inline transition duration-150 ease-out hover:ease-in hover:scale-110 hover:cursor-pointer"
                   onClick={() => window.open("https://instagram.com/aziz_js", "_blank")}
                 />
-              </Fade>
-              <Fade top>
+              </FadeInOnScroll>
+              <FadeInOnScroll>
                 <Icon
                   icon={"logos:google-gmail"}
                   width="80"
@@ -355,7 +355,7 @@ export default function Home() {
                   className="inline transition duration-150 ease-out hover:ease-in hover:scale-110 hover:cursor-pointer"
                   onClick={() => window.open("mailto:azizjabbar1412@gmail.com", "_blank")}
                 />
-              </Fade>
+              </FadeInOnScroll>
             </div>
           </div>
         </div>

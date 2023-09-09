@@ -5,8 +5,9 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, DeviceTabletIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Modal from "../../components/Modal";
 import { Icon } from "@iconify/react";
-import Fade from "react-reveal/Fade";
 import VideoBackground from "@/components/VideoBackground";
+import Link from "next/link";
+
 // import TypeWriterEffect from "react-typewriter-effect";
 
 export default function About() {
@@ -31,11 +32,13 @@ export default function About() {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only"></span>
-              <b>AJS</b>
-              {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600" alt="" /> */}
-            </a>
+            <Link
+              className="r -m-1.5 p-1.5 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
+              href="/"
+              scroll={false}
+            >
+              <b> &lt; Back</b>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -93,7 +96,30 @@ export default function About() {
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <VideoBackground />
-        <h1>Hello World</h1>
+        <section className="h-screen flex flex-col justify-center items-center">
+          <h1 className="text-4xl font-bold text-center tracking-tight text-slate-900 dark:text-slate-100 sm:text-8xl">
+            Hi There!
+          </h1>
+          <p className="mt-6 text-lg leading-8 text-center text-slate-600 dark:text-slate-400">
+            This page will get you to know me deeper.
+          </p>
+          <a
+            href="#about"
+            className="rounded-md bg-blue-600 px-3.5 py-2.5 m-6 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+          >
+            Get Started
+          </a>
+        </section>
+        <section id="about">
+          <div class="container bg-gray-200 my-6 dark:bg-slate-700 h-3/4 rounded-lg mx-auto py-3 md:py-9">
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+          </div>
+        </section>
       </div>
     </div>
   );
