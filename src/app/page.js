@@ -168,6 +168,7 @@ export default function Home() {
             }}
           />
         </div> */}
+        {/* ANCHOR Hero section */}
         <div className="ml-8 md:ml-16 lg:ml-24 max-w-2xl py-16 sm:py-32 lg:py-24">
           <div className="text-left">
             <p className="text-medium my-8 text-slate-600 dark:text-slate-400">
@@ -208,12 +209,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-
+        {/* ANCHOR About me */}
         <div className="mx-8 md:mx-16 lg:mx-24 py-16 sm:py-32 lg:py-24">
           <h1 id="about-me" className="text-4xl font-bold text-slate-900 dark:text-slate-100">
             About Me
           </h1>
-          <FadeInOnScroll direction="left">
+          <FadeInOnScroll direction="right">
             <p className="my-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
               I am a fresh graduate of the University of Indonesia, majoring in Information Systems with interest in
               front end development and android development. I am a fast learner and want to learn as much as I can
@@ -230,6 +231,7 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* ANCHOR Skills */}
         <div className="mx-8 md:mx-16 lg:mx-24 py-16 sm:py-32 lg:py-24">
           <div className="text-center">
             <h1 id="skills" className="text-4xl font-bold text-slate-900 dark:text-slate-100">
@@ -248,6 +250,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* ANCHOR Projects */}
         <div className="mx-8 md:mx-16 lg:mx-24 py-16 sm:py-32 lg:py-24">
           <div className="text-center">
             <h1 id="projects" className="text-4xl font-bold text-slate-900 dark:text-slate-100">
@@ -277,6 +280,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* ANCHOR Career */}
         <div className="mx-8 md:mx-16 lg:mx-24 py-16 sm:py-32 lg:py-24">
           <div className="text-center">
             <h1 id="career" className="text-4xl font-bold text-slate-900 dark:text-slate-100">
@@ -303,6 +307,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* ANCHOR Contacts */}
         <div className="mx-8 md:mx-16 lg:mx-24 py-16 sm:py-32 lg:py-24">
           <div className="text-center">
             <h1 id="contacts" className="text-4xl font-bold text-slate-900 dark:text-slate-100">
@@ -362,6 +367,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* ANCHOR Resume */}
         <div className="mx-8 md:mx-16 lg:mx-24 py-16 sm:py-32 lg:py-24">
           <div className="text-center">
             <h1 id="resume" className="text-4xl font-bold text-slate-900 dark:text-slate-100">
@@ -389,7 +395,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"
