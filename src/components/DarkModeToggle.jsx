@@ -1,10 +1,10 @@
 function DarkModeToggle(props) {
   const { currentTheme, setTheme } = props;
-  function handleMouseEnter() {
+  function shineToRight() {
     const shineElement = document.getElementById("shine");
     shineElement.style["left"] = "200%";
   }
-  function handleMouseLeave() {
+  function shineToLeft() {
     const shineElement = document.getElementById("shine");
     shineElement.style["left"] = "-100%";
   }
@@ -14,8 +14,8 @@ function DarkModeToggle(props) {
         <button
           className="relative overflow-hidden backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 border border-gray-400/50 w-fit rounded-md p-2"
           onClick={() => setTheme("light")}
-          onMouseEnter={() => handleMouseEnter()}
-          onMouseLeave={() => handleMouseLeave()}
+          onMouseEnter={() => shineToRight()}
+          onMouseLeave={() => shineToLeft()}
         >
           <img src="/moon.svg" alt="logo" height="20px" width="20px" className="-hue-rotate-60" />
           <div
