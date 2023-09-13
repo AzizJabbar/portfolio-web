@@ -29,6 +29,15 @@ export default function About() {
 
   const currentTheme = theme === "system" ? systemTheme : theme;
 
+  function shineToRight() {
+    const shineElement = document.getElementById("shine1");
+    shineElement.style["left"] = "200%";
+  }
+  function shineToLeft() {
+    const shineElement = document.getElementById("shine1");
+    shineElement.style["left"] = "-100%";
+  }
+
   return (
     <div className="bg-white dark:bg-slate-900">
       <Navbar
@@ -49,9 +58,15 @@ export default function About() {
           </p>
           <a
             href="#about"
-            className="rounded-md bg-blue-600 px-3.5 py-2.5 m-6 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="hover:scale-105 transition duration-500 relative overflow-hidden backdrop-filter backdrop-blur-md dark:bg-gray-400/10 bg-blue-600 border border-gray-400/30 rounded-md px-3.5 py-2.5 m-6 text-sm font-semibold text-white shadow-sm"
+            onMouseEnter={shineToRight}
+            onMouseLeave={shineToLeft}
           >
             Get Started
+            <div
+              id="shine1"
+              className="absolute rotate-[30deg]  -top-full -left-full w-1/4 h-[300%] bg-gradient-to-r from-white/0 via-white/30  transition-all duration-700"
+            ></div>
           </a>
         </section>
         <section id="about">

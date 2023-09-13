@@ -13,8 +13,9 @@ function Navbar(props) {
   const toggleSwitch = () => {
     // setIsHome(!isHome);
     // controls.start({ left: isHome ? 0 : null, right: isHome ? null : 0 });
+
     window.scrollTo({
-      top: 0,
+      top: 1,
       behavior: "smooth",
     });
   };
@@ -39,23 +40,23 @@ function Navbar(props) {
           </button>
         </div>
         <div className="flex rounded-full p-1.5 backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 border border-gray-400/50">
-          <Link onClick={toggleSwitch} href="/" scroll={true}>
+          <Link onClick={toggleSwitch} href="/" scroll={false}>
             <div
               className={
                 window.location.pathname === "/"
                   ? "rounded-full text-sm px-6 py-2 backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 hover:cursor-pointer"
-                  : "text-sm rounded-full px-6 py-2 hover:cursor-pointer hover:backdrop-blur-sm bg-opacity-5"
+                  : "text-sm rounded-full px-6 py-2 hover:cursor-pointer hover:backdrop-blur-sm bg-opacity-5 "
               }
             >
               Work
             </div>
           </Link>
-          <Link onClick={toggleSwitch} href="/about" scroll={true}>
+          <Link onClick={toggleSwitch} href="/about" scroll={false}>
             <div
               className={
                 window.location.pathname === "/about"
-                  ? "rounded-full text-sm px-6 py-2 backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 hover:cursor-pointer"
-                  : "text-sm rounded-full px-6 py-2 hover:cursor-pointer hover:backdrop-blur-sm bg-opacity-5"
+                  ? "rounded-full text-sm px-6 py-2 backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 hover:cursor-pointer "
+                  : "text-sm rounded-full px-6 py-2 hover:cursor-pointer hover:backdrop-blur-sm bg-opacity-5 "
               }
             >
               Info

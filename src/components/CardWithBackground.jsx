@@ -9,11 +9,15 @@ function CardWithBackground(props) {
   // Event handler for when the mouse enters the div
   const handleMouseEnter = () => {
     setIsHovered(true);
+    const shineElement = document.getElementById("shine2");
+    shineElement.style["left"] = "200%";
   };
 
   // Event handler for when the mouse leaves the div
   const handleMouseLeave = () => {
     setIsHovered(false);
+    const shineElement = document.getElementById("shine2");
+    shineElement.style["left"] = "-100%";
   };
   return (
     <>
@@ -21,7 +25,7 @@ function CardWithBackground(props) {
         style={styles}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="relative w-64 h-36 m-6 flex justify-center items-center rounded-md drop-shadow-md bg-cover bg-center transition duration-150 ease-out hover:ease-in hover:scale-105 hover:cursor-pointer"
+        className="relative overflow-hidden w-64 h-36 m-6 flex justify-center items-center rounded-md drop-shadow-md bg-cover bg-center transition duration-150 ease-out hover:ease-in hover:scale-105 hover:cursor-pointer"
       >
         <div
           className={
@@ -31,6 +35,10 @@ function CardWithBackground(props) {
           }
         ></div>
         <div className="title tracking-wide text-xl brightness-100 text-slate-100 font-bold">{title}</div>
+        <div
+          id="shine2"
+          className="absolute rotate-[30deg]  -top-full -left-full w-1/4 h-[300%] bg-gradient-to-r from-white/0 via-white/30  transition-all duration-700"
+        ></div>
       </div>
     </>
   );
